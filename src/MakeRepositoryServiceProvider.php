@@ -15,10 +15,6 @@ class MakeRepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->publishes([
-            __DIR__ . '/config/mkrepo.php' => config_path('mkrepo.php'),
-        ]);
-
         $this->mergeConfigFrom(
             __DIR__ . '/config/mkrepo.php',
             'mkrepo'
@@ -32,11 +28,13 @@ class MakeRepositoryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MakeRepository::class,
-                MakeRepositoryContract::class,
-            ]);
-        }
+        $this->publishes([
+            __DIR__ . '/config/mkrepo.php' => config_path('mkrepo.php'),
+        ]);
+
+        $this->commands([
+            MakeRepository::class,
+            MakeRepositoryContract::class,
+        ]);
     }
 }
