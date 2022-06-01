@@ -1,0 +1,16 @@
+<?php
+
+namespace {{namespace}};
+
+use {{namespacedModel}};
+use {{namespacedContract}};
+use Longtnt\MakeRepository\Repositories\Eloquent\EloquentBaseRepository;
+
+class {{class}} extends EloquentBaseRepository implements
+    {{contract}}
+{
+    public function model()
+    {
+        return {{model}}::class;
+    }
+}

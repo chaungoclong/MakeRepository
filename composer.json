@@ -1,0 +1,19 @@
+{
+    "name": "longtnt/make-repository",
+    "description": "Use for make Repository class",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Longtnt\\MakeRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "long",
+            "email": "chaungoclong2411@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

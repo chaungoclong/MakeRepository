@@ -1,0 +1,10 @@
+<?php
+
+namespace {{namespace}};
+
+use Longtnt\MakeRepository\Repositories\Eloquent\EloquentBaseRepository;
+
+class {{class}} extends EloquentBaseRepository
+{
+
+}
