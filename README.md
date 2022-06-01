@@ -1,6 +1,6 @@
 
 # Make Repository
-Laravel repository generator for 8.0+ versions
+Repository generator
 
 
 ## Installation
