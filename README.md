@@ -28,3 +28,10 @@ php artisan make:repo Test --model=Test -c
 ```
 
 
+
+## Publish Config
+
+```php
+php artisan vendor:publish
+```
+
